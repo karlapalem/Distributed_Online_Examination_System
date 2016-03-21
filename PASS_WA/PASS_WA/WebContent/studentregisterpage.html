@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Student's Site</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>	
+
+ function validate()
+{
+           var uname = document.form1.firstname;  
+			var lname = document.form1.lastname;  
+if(allLetter(uname))
+{ if(allLetter1(lname)) { if(num())	{ if(select1())   { if( emailCheck())
+	 {				var pwd1= document.form1.password1;
+					var pwd2 = document.form1.password2;
+				if((pwd1.value==null)||(pwd1.value==""))
+					{alert("Please Enter your password!")
+					pwd1.focus();
+					return false;}
+				if(pwd1.value.length<5){
+						alert("Password should be above 4 characters!")
+						pwd1.focus();
+						return false;}
+				if((pwd2.value==null)||(pwd2.value=="")){
+						alert("Please Enter your confirmation  password!")
+						pwd2.focus()
+						return false;}
+			 if(pwd2.value.length<5){
+						alert("Confirmation Password should be above 4 characters!")
+						pwd2.focus();
+						return false;}
+				 if(pwd1.value!= pwd2.value)
+				   {
+				   alert("Confirmation Password did not matched with the password");
+				   pwd2.focus();
+				   return false;
+				   }
+				 return true;
+		 }// email
+       
+       }//select1
+		} //telephone
+	   }// lname
+}// uname
+		  return false;  
+}//VALIDATE
+function allLetter(uname)  
+ {
+			if(uname.value.length==0)
+			{
+            alert("Please Enter your username!");
+            uname.focus();
+            return false;
+            }
+
+		var letters = /^[A-Za-z]+$/;  
+		if(uname.value.match(letters))  
+		{  
+			if((uname.value.length<5)||(uname.value.length>13))
+			{
+            alert("Username must be between 4-14 characters");
+            uname.focus();
+            return false;
+            }
+		return true;  
+		}  
+			else  
+			{  
+			alert('Username must have alphabets only');  
+			uname.focus();  
+			return false;  
+			}  
+}
+function allLetter1(lname)  
+ {
+			if(lname.value.length==0)
+			{
+            alert("Please Enter your lastname!");
+            lname.focus();
+            return false;
+            }
+			var letters = /^[A-Za-z]+$/;  
+		if(lname.value.match(letters))  
+			{  
+            if((lname.value.length<5)||(lname.value.length>13))
+			{
+            alert("lastname must be between 4-14 characters");
+            lname.focus();
+            return false;
+            }
+		return true;  
+			}  
+			else  
+			{  
+			alert('lastname must have alphabet characters only');  
+			lname.focus();  
+			return false;  
+			}  
+}
+function num()
+{		var n=document.form1.telephone.value;
+  var size=n.length;
+   if(size==0)
+		{alert("Enter phone number ");
+	document.form1.telephone.focus();
+			return false;}
+      var numbers = /^[0-9]+$/;  
+	if(n.match(numbers))  
+	 {
+	  	if((size<10) || (size>10))
+		{
+		//n.value=""
+		alert("Phone number sholud be 10 digits");
+		document.form1.telephone.focus();
+		return false;
+		}
+		return true;
+	}
+      else  
+        {  
+        alert("Allow Numbers only for telephone");  
+		document.form1.telephone.focus();
+        return false;  
+        }
+}
+function select1()
+{	if( document.form1.gu.value==" ")
+	 {
+	   alert( "Select Graduate/UnderGraduate " );
+	   return false;	
+	 }
+	return true;
+}
+function emailCheck()
+{  var emailID=document.form1.email;
+		
+        if((emailID.value==null)||(emailID.value==""))
+			{
+            alert("Please Enter your Email address!")
+            emailID.focus()
+            return false
+            }
+
+            if (checkEmail(emailID.value)==false) 
+				{
+            //emailID.value=""
+            alert("Invalid Email Address !");
+            emailID.focus()
+            return false
+               }
+			else 
+			return true;
+} 
+
+ function checkEmail(pemail)
+ {   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(pemail))
+			{
+		return true;
+            }
+        return false; 
+ }
+</script>
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">ie_png.fix('.png, footer, header nav ul li a, .nav-bg, .list li img');</script>
+<![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
+<div class="wrap">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html" class="m1">Home Page</a></li>
+          <li><a href="about-us.html" class="m2">About Us</a></li>
+          <li><a href="contact-us.html" class="m4">Contact Us</a></li>
+        </ul>
+      </nav>
+      </div>
+  </header>
+  <div class="container">
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+     <li><span><a href="http://www.examination.com/PASS/studentpage.html">Student </a></span></li>
+     <li><span><a href="http://www.examination.com/PASS/instructorpage.html">Instructor</a></span></li> 
+       </ul>
+     <h2>Important <span>Links</span></h2>
+      <ul class="news">
+        <li>
+      <a href = "www.uta.edu"><img src="images/uta.jpg" alt="UTA Website" style="width:100px;height:100px;border:0"></a><br>
+          <br>
+          <a href = "https://elearn.uta.edu"><img src="images/blackboard.gif" alt="UTA Blackboard" style="width:100px;height:100px;border:0"></a><br>
+          <br>
+          <a href = "https://sis-portal-prod.uta.edu/psp/AEPPRD/EMPLOYEE/EMPL/h/signon.html"><img src="images/mymav.png" alt="MyMav" style="width:100px;height:100px;border:0"></a><br>
+          <br>
+          <a href = "www.uta.edu/oit/cs/email/mavmail.php"><img src="images/mavmail.png" alt="MavMail" style="width:100px;height:100px;border:0"></a><br>
+            </li>
+		   </ul>
+    </aside>
+    <section id="content">
+      <div id="banner">
+        <h2><span></span></h2>
+      </div>
+      <div class="inside">
+        
+	   <form name="form1" action="http://www.examination.com/PASS/Servletread" method="get" id="f" onsubmit="return validate()" >
+			<fieldset>
+				<h2><font  color="blue">Enter Student Informations:</font></h2>
+				<label>
+					First name :
+					<input value=""  type="text" name="firstname" id="user" />
+				</label><br><br>
+							
+			   <label>Last name : <input  type="text" id="lastname" name="lastname"  />
+				</label><br><br>
+		    </fieldset> 
+
+			<fieldset><label>
+				Telephone : 
+				<input value="" type="text" name="telephone"  id="telephone"/>
+			</label><br></fieldset>
+		<fieldset><legend><font size="3" color="blue">Select User Type:</font></legend>
+					<br><select name="gu">
+					<option value=" ">--Select--</option>
+					<option value="Graduate">Graduate</option>
+					<option value="UnderGraduate">UnderGraduate</option>
+			    </select><br></fieldset><br><br>
+					
+			<fieldset><legend><font size="3" color="blue">Email</font></legend><br>
+				 <label>Email address :<input value=""   type="text" name="email" id="email"/><br>
+				</label></fieldset><br>
+
+			<fieldset>
+				<legend><font size="3" color="blue">Password</font></legend><br>
+				<label>
+					Password : 
+					<input value=""  type="password" name="password1"  id="password1" />
+				</label>
+				<label>
+					Confirm password : 
+					<input value=""   type="password" name="password2"  id="password2" />
+				</label>
+			</fieldset><br><br>
+			<input class="submit" type="submit" value="Registration">
+            </form></table>
+		<br><br><br><br><br><h2>Move Forward <span>With Your Education</span></h2>
+        <p><span class="txt1"></span> This site is focused on designed and developed state-of-the-art courseware and appropriate learning paradigm in software and Web applications security for computer science and computer information systems students. </p><br>
+      
+
+      </div>
+    </section>
+  </div>
+</div></body>
+</html>

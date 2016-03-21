@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Add Main Topic</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>	
+ function validate()
+ {
+	 var a = document.form1.code.value;
+		var b = document.form1.maintopic.value;
+		
+		if(a.length==0)
+		{
+			alert("Please Enter Your code");
+			return false;			
+		}
+		if(b.length==0)
+		{
+			alert("Please Enter Your maintopic");
+			return false;
+		
+		}
+ }
+</script>
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">ie_png.fix('.png, footer, header nav ul li a, .nav-bg, .list li img');</script>
+<![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
+<div class="wrap">
+  <header>
+    <div class="container">
+      <h1><marquee> <p >Welcomes to Under Graduates</p></marquee></h1>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html" class="m1">Home Page</a></li>
+          <li><a href="about-us.html" class="m2">About Us</a></li>
+          <li><a href="contact-us.html" class="m4">Contact Us</a></li>
+        </ul>
+      </nav>
+      </div>
+  </header>
+  <div class="container">
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+     <li><span><a href="http://www.examination.com/PASS/studentpage.html">Student </a></span></li>
+     <li><span><a href="http://www.examination.com/PASS/instructorpage.html">Instructor</a></span></li> 
+       </ul>
+     <h2>Fresh <span>News</span></h2>
+      <ul class="news">
+        <li><strong>June 30, 2013</strong>
+          <h4>Education</h4>
+           Focused on designed and developed state-of-the-art courseware and appropriate learning paradigm in software and Web applications security for computer science and computer information systems students with updated courseware . </li>
+		   </ul>
+    </aside>
+    <section id="content">
+      <div id="banner">
+        <h2><span></span></h2>
+      </div>
+      <div class="inside">
+      
+   <table >
+	   <tr><td width="660" valign="top">
+ <font size="5" color="blue">Instructor Add Main Topic:<br><br></font>
+ 
+ 
+ 
+ 
+ 
+      <form name="form1" action="http://www.examination.com/PASS/UgAddMaintopic" method="get" onsubmit="return validate()" >
+			<fieldset>
+				<legend><font size="3" color="blue">Enter</font></legend>
+				<label><br>Enter code :
+				<input value=""  type="text" name="code"  />
+				</label><br><br>
+							
+			    <label>Main Topic Name :
+			     <input  type="text"  name="maintopic"  />
+				 </label><br><br>
+			</fieldset>	
+				<input class="submit" type="submit" value="Add">
+	     </form>
+	
+
+
+
+
+	</table><br><br><br>
+	 <h2>Move Forward <span>With Your Education</span></h2>
+        <p><span class="txt1"></span> This site is focused on designed and developed state-of-the-art courseware and appropriate learning paradigm in software and Web applications security for computer science and computer information systems students. </p><br>
+	
+
+      </div>
+    </section>
+  </div>
+</div></body>
+</html>

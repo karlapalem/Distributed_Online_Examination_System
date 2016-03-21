@@ -1,0 +1,10 @@
+1.The phrase __________ describes viruses, worms, Trojan horse attack applets, and attack scripts.
+A)malware B)spam C)phish D)virus A)malware
+2.A hacker that changes or forges information in an electronic resource, is engaging in __________.
+A)denialofservice B)sniffing C)terrorism D)datadiddling D)datadiddling
+3.Hackers often gain entry to a network be pretending to be at a legitimate computer.
+A)spoofing B)forging C)IPspoofing D)IDtheft C)IPspoofing
+4.The __________ of a threat measures its potential impact on a system.
+A)vulnerabilities B)countermeasures C)degreeofharm D)susceptibility C)degreeofharm
+5.The power level drops below 120V.
+A)brownout B)spike C)blackout D)surge B)spike

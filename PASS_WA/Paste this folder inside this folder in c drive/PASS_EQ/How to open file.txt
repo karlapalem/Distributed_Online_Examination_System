@@ -1,0 +1,10 @@
+1.  A __________ is anything that can cause harm.
+A)vulnerability B)phish C)threat D)spoof C)threat 
+2.  In the right setting a thief will steal your information by simply watching what you type.
+A)snagging B)spying C)socialengineering D)shouldersurfing D)shouldersurfing
+3.  A __________ is a small program embedded inside of a GIF image.
+A)webbug B)cookie C)spywareapplication D)spam A)webbug
+4.  A hacker contacts you my phone or email and attempts to acquire your password.
+A)spoofing B)phishing C)spamming D)bugging B)phishing 
+5.  This power protection device includes a battery that provides a few minutes of power.
+A)surgesuppressor B)lineconditioner C)generator D)UPS D)UPS
